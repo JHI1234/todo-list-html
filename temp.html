@@ -1,0 +1,24 @@
+<!-- temp.html -->
+
+<script>
+
+    const data = {key : "value"};
+
+    const json = JSON.stringify(data);
+
+    localStorage.setItem("test", json);
+
+    const newJson = localStorage.getItem("test");
+
+    const newData = JSON.parse(newJson);
+
+    alert(newData.key);
+
+    // localStorage 저장
+    // const test = localStorage.getItem("test");
+    // alert(test);
+
+
+
+
+</script>
